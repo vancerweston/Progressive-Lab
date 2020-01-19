@@ -1,82 +1,94 @@
-/*
-For each CSS file (these should be clearly different in each 
-file):
-    A color palette of no more than five colors (choose colors 
-        that work well together)
-    Typeface / Font (no more than two typefaces)
-        Header and footer sizes
-    One design should be a static width, the other should adjust 
-        to always fit the width of the browser (hint: set width with 
-        pixels or percentage)
-    One should utilize background images, the other should just 
-        rely on a background-color
-    The text should be easily readable (don't put dark text on a 
-        dark background, make a readable size, etc.)
-    Use good padding and margins on both, give the content some 
-        space.
-    Alter the layouts of the two designs, including the positioning
-        of elements
-    NO SOUND
-*/
-
-
+html {
+    background-color: rgba(30, 61, 53, 0.644);
+}
 body {
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 800px 900px;
+    width: 700px;
+    max-width: 700px;
+    min-width: 300px;
     margin: auto;
-    background-color: rgba(232, 241, 236, 0.678);
-    width: static;
+    position: static; 
+}
+section {
+    width: 650px;
+    margin: auto;
 }
 .main-section {
-    padding: 5px;
-    background-color: rgb(15, 25, 51);
-}
-#main-title {
-    color: whitesmoke;
+    color: rgb(34, 88, 81);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border: rgb(248, 248, 231) solid 3px;
+    border-radius: 50px;
+    padding: 5px;
 }
 .main-nav {
-    background-color: rgb(224, 221, 202);
-}
-.main-nav nav {
-    align-items: center;
-}
-.main-nav ul {
     margin: auto;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 5px;  
+}
+.main-nav header nav ul {
     list-style-type: none;
-    overflow: hidden;
+    margin: auto;
+    clear: left right;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 .main-nav header nav ul li a {
-    float: left;
-    text-decoration: none;
-    color: rgb(17, 17, 17);
-    padding: 0 15px;
+    text-emphasis: none;
+    text-decoration: none; 
+    color: rgb(83, 111, 121);
+    margin: auto; 
 }
-.main-heading,
-.main-nav,
-.main-section,
-h3 {
+.main-nav header nav ul li a:hover {
+    background-color:  rgb(248, 248, 231);
+    border-radius: 20px;
+    padding: 5px;
+}
+.main-heading {
+    color: rgb(34, 88, 81);
     text-align: center;
-    font-family: cursive;
+    overflow: none;
+}
+.main-heading h2 {
+    padding: 10px;
+    margin: 50px auto 40px auto;
+    width: 250px;
+    border-bottom:  rgb(248, 248, 231) 1px solid;
 }
 .main-info {
+    color:  rgb(248, 248, 231);
+}
+.main-info p {
     font-family: arial;
-}
-.main-info,
-.main-title {
-    text-align: center;
-}
-p {
+    text-indent: 25px;
     padding: 10px;
 }
-table#main-table {
-    box-align: center;
+.main-info table#main-table {
+    float:right;
+    padding: 5px;
+    border:  rgb(248, 248, 231) 2px solid;
+    border-radius: 15px;
+    margin: 0px 7px 5px 0px;
+    text-align: center;
 }
-table#main-table tr {
-    text-align: left;
+.main-info table#main-table th {
+    padding: 5px;
+}
+.main-title {
+    color:  rgb(248, 248, 231);
+    text-align: center;
+}
+.main-title img {
+    size: 500px 125px;
 }
 footer {
+    color:  rgb(248, 248, 231);
     text-align: center;
-    margin-bottom: 15px;
-    padding: 15px 0;
+    padding-bottom: 20px;
 }
-
