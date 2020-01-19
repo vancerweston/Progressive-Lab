@@ -1,33 +1,40 @@
 /*
-For each CSS file (these should be clearly different in each file):
-A color palette of no more than five colors (choose colors that work well together)
-Typeface / Font (no more than two typefaces)
-Header and footer sizes
-One design should be a static width, the other should adjust to always fit the width of the browser (hint: set width with pixels or percentage)
-One should utilize background images, the other should just rely on a background-color
-The text should be easily readable (don't put dark text on a dark background, make a readable size, etc.)
-Use good padding and margins on both, give the content some space.
-Alter the layouts of the two designs, including the positioning of elements
-NO SOUND
+For each CSS file (these should be clearly different in each 
+file):
+    A color palette of no more than five colors (choose colors 
+        that work well together)
+    Typeface / Font (no more than two typefaces)
+        Header and footer sizes
+    One design should be a static width, the other should adjust 
+        to always fit the width of the browser (hint: set width with 
+        pixels or percentage)
+    One should utilize background images, the other should just 
+        rely on a background-color
+    The text should be easily readable (don't put dark text on a 
+        dark background, make a readable size, etc.)
+    Use good padding and margins on both, give the content some 
+        space.
+    Alter the layouts of the two designs, including the positioning
+        of elements
+    NO SOUND
 */
 
 
 body {
     margin: auto;
-    background-color: lightgray;
+    background-color: rgba(232, 241, 236, 0.678);
     width: static;
 }
 .main-section {
     padding: 5px;
-    background-color: navy;
+    background-color: rgb(15, 25, 51);
 }
 #main-title {
     color: whitesmoke;
     text-align: center;
 }
 .main-nav {
-    background-color: lightskyblue;
-    
+    background-color: rgb(224, 221, 202);
 }
 .main-nav nav {
     align-items: center;
@@ -37,12 +44,11 @@ body {
     padding: 15px;
     list-style-type: none;
     overflow: hidden;
-    
 }
 .main-nav header nav ul li a {
     float: left;
     text-decoration: none;
-    color: grey;
+    color: rgb(17, 17, 17);
     padding: 0 15px;
 }
 .main-heading,
@@ -60,7 +66,7 @@ h3 {
     text-align: center;
 }
 p {
-    padding: 15px;
+    padding: 10px;
 }
 table#main-table {
     box-align: center;
@@ -70,6 +76,7 @@ table#main-table tr {
 }
 footer {
     text-align: center;
-    padding-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
 }
 
