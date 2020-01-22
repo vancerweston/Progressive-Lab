@@ -62,7 +62,7 @@ section {
     border-bottom:  rgb(248, 248, 231) 1px solid;
 }
 .main-info {
-    color:  rgb(248, 248, 231);
+    color: black;
 }
 .main-info p {
     font-family: arial;
@@ -81,7 +81,7 @@ section {
     padding: 5px;
 }
 .main-title {
-    color:  rgb(248, 248, 231);
+    color:  black;
     text-align: center;
 }
 .main-title img {
