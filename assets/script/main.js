@@ -12,4 +12,5 @@ let divition = x / y;
 console.log(x + ' / ' + y + ' = ' + divition);
 let remainder = x % y;
 console.log(x + ' % ' + y +  ' = ' + remainder);
+
 /*console.log(`${x} % ${y} = ${remainder}`);*/
