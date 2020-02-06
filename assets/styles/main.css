@@ -17,6 +17,11 @@ section {
     width: 650px;
     margin: auto;
 }
+#numresponse,
+#ageresponse {
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
 .main-section {
     color: rgb(34, 88, 81);
     text-align: center;

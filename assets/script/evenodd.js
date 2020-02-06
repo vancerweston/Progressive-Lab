@@ -1,11 +1,15 @@
-const numberElement = document.getElementById('number');
-const isEven =  parseInt(numberElement.innerText, 10) % 2 === 0;
-const newElement = document.createElement('span');
 
-if (isEven) {
-    newElement.innerText = ' Is Even';
-} else {
-    newElement.innerText = ' Is Odd';
+    
+function numData(form) {
+    let theirNum = document.forms['numberForm']['inputnumber'].value;
+    let output;
+
+    if (theirNum % 2 == 0) {
+        output = 'It\'s EVEN!';
+    } else if(isNaN(theirNum)) {
+        output = 'This is not a vaild entry.'
+    } else {
+        output = 'It\'s ODD';
+    }
+    document.getElementById('numresponse').innerHTML = output;
 }
-
-numberElement.insertAdjacentElement('afterend', newElement)

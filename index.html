@@ -2,15 +2,14 @@
 <html>
     <head>
         <title>Home Page</title>
+        <script src="assets/script/evenodd.js"></script>
+        <script src="assets/script/age.js"></script>    
         <script src="assets/script/main.js"></script>
         <link href="assets/styles/main.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <section class="main-section">
             <h1 id="main-title">Weston's Cool Website</h1>
-            <span id="number">42</span>
-            <br>
-            <span id='yourAge'>22</span>
         </section>
         <section class="main-nav">
             <header>
@@ -29,6 +28,22 @@
         <section class="main-title">
             <img src="assets/images/0B4A1174-1 (1).jpg" />
             <h3>My name is Vance Weston</h3>
+            <section id="evenodd">
+                <h5>Enter Your Number Here:</h5>
+                <form name="numberForm">
+                    <input type='text' name='inputnumber' value=''>
+                    <input type='button' name='button' value='Submit' onClick='numData(this.form)'>
+                </form>
+            </section>
+            <section id='numresponse'></section>
+            <section id='age'>
+                <h5>Enter Your Age Here:</h5>
+                <form name="ageForm">
+                    <input type='text' name='inputage' value=''>
+                    <input type='button' name='button' value='Submit' onClick='ageData(this.form)'>
+                </form>
+            </section>
+            <section id='ageresponse'></section>
         </section>
         <section class="main-info">      
             <p>Growing up in <em>Laketown, Utah</em>, I never really had much of an experience
@@ -50,6 +65,4 @@
     <footer>
         <em>Copyright © 2020 by Vance Weston</em>
     </footer>
-    <script src="assets/script/evenodd.js"></script>
-    <script src="assets/script/age.js"></script>
 </html>

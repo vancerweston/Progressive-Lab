@@ -1,15 +1,18 @@
-const myAge = 23;
-const theirAgeElement = document.getElementById('yourAge');
-const theirAge = +theirAgeElement.innerText;
-const newSpan = document.createElement('span');
-if (theirAge > myAge) {
-    newSpan.innerText = ' is your age. You are older than me.'
-} else if (theirAge < myAge) {
-    newSpan.innerText = ' is your age. You are younger than me.'
-} else if (theirAge === myAge) {
-    newSpan.innerText = ' is your age. WE ARE THE SAME AGE!!!'
-} else {
-    newSpan.innerHTML = 'You did not enter a valid age. Please re-enter your age.'
-}
 
-theirAgeElement.insertAdjacentElement('afterend', newSpan);
+    
+function ageData(form) {
+    let theirAge = document.forms['ageForm']['inputage'].value;
+    let output;
+    let myAge = 23;
+
+    if (theirAge == myAge) {
+        output = 'We are the same age!!';
+    } else if(isNaN(theirAge)) {
+        output = 'This is not a vaild entry, Please enter your age.'
+    } else if(theirAge > myAge) {
+        output = 'You are older than me.';
+    } else {
+        output = 'I am older than you.';
+    }
+    document.getElementById('ageresponse').innerHTML = output;
+}
